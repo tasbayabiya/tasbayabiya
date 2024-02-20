@@ -1,0 +1,38 @@
+ if (REVERSE_RESPONSE == BILLING_EXCEPTION) 
+      throw new BillingException("Developer Billing Exception"); 
+  } 
+ 
+  /** 
+   * see BillingManager#refund(BillingInfo) 
+   */ 
+  public void refund(BillingInfo inBillingInfo) 
+      throws BillingException 
+  { 
+    if (REFUND_RESPONSE == EXCEPTION) 
+      throw new NullPointerException("Developer Null Pointer"); 
+ 
+    if (REFUND_RESPONSE == BILLING_EXCEPTION) 
+      throw new BillingException("Developer Billing Exception"); 
+  } 
+ 
+  /** 
+   * seeBillingManager#subscribe(BillingInfo) 
+   */ 
+  public void subscribe(BillingInfo inBillingInfo) 
+      throws BillingException 
+  { 
+    if (SUBSCRIBE_RESPONSE == EXCEPTION) 
+      throw new NullPointerException("Developer Null Pointer"); 
+ 
+    if (SUBSCRIBE_RESPONSE == BILLING_EXCEPTION) 
+       throw new BillingException("Developer Billing Exception"); 
+  } 
+ 
+  /** 
+   * see BillingManager#unsubscribe(BillingInfo) 
+   */ 
+  public void unsubscribe(BillingInfo inBillingInfo) 
+      throws BillingException 
+  { 
+    if (UNSUBSCRIBE_RESPONSE == EXCEPTION) 
+      throw new NullPointerException("Developer Null Pointer"); 
